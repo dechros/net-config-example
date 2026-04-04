@@ -1,3 +1,3 @@
 # netConfigExample
-This project is a net config protocol implementation project.
-This project is designed for Windows desktop computers.
+Net config protocol implementation.
+Designed for Windows desktop.
