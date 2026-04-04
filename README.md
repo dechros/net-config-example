@@ -1,3 +1,3 @@
-# netConfigExample
-Net config protocol implementation.
-Designed for Windows desktop.
+# net-config-example
+
+Net config protocol implementation for Windows.
