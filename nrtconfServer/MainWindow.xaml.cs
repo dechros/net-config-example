@@ -18,15 +18,14 @@ using System.Xml.Linq;
 namespace nrtconfServer
 {
     /// <summary>
-    ///     MainWindow penceresi ile ilgili tüm lojik işlemler.
+    ///     All logic belonging to the MainWindow window.
     /// </summary>
     public partial class MainWindow : Window
     {
-        // Private Variables
         private string path { get; set; }
 
         /// <summary>
-        ///     MainWindow penceresi için constructor fonksiyonu.
+        ///     Constructor for the MainWindow window.
         /// </summary>
         public MainWindow()
         {
@@ -38,7 +37,7 @@ namespace nrtconfServer
         }
 
         /// <summary>
-        ///     Uygulama kapanmadan önce son kontrolleri yapar.
+        ///     Runs the final checks before the application exits.
         /// </summary>
         private void Window_Closed(object sender, EventArgs e)
         {
@@ -46,7 +45,7 @@ namespace nrtconfServer
         }
 
         /// <summary>
-        ///     XML haberleşmesi için gerekli klasörü oluşturur.
+        ///     Creates the directory required for XML communication.
         /// </summary>
         private void CheckXmlDirectory(string path)
         {
@@ -64,7 +63,7 @@ namespace nrtconfServer
         }
 
         /// <summary>
-        ///     XML haberleşmesi için gerekli istemci dosyalarını oluşturur.
+        ///     Creates the client files required for XML communication.
         /// </summary>
         private void WriteServerXml(string path, string status)
         {
@@ -86,7 +85,7 @@ namespace nrtconfServer
         }
 
         /// <summary>
-        ///     Netconf client isteklerini handle eder.
+        ///     Handles netconf client requests.
         /// </summary>
         private async void CheckClientXml()
         {
